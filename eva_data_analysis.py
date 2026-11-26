@@ -71,7 +71,7 @@ def text_to_duration(duration):
     # Example: "1:30" -> hours = "1", minutes = "30" (both still text)
     hours, minutes = duration.split(":")
     # int() turns the text into numbers; minutes are converted to a fraction of an hour
-    duration_hours = int(hours) + int(minutes)/6  # intentional bug from the course: should divide by 60, not 6
+    duration_hours = int(hours) + int(minutes)/60  
     return duration_hours
 
 
